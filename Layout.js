@@ -1,10 +1,9 @@
 const e = React.createElement;
-//please work
 class NavBar extends React.Component {
   render() {
     const names = ["Abby","Beau","Bianca","Cade","Ethan","Evan","Evanna","Grace","Kayla","Kung","Megan","Natalie","Tanner"];
     const links = names.map(item =>
-      e("li",{className:"nav-item"},e("a",{className:"nav-link",href:"./"+item+".html"},item))
+      e("li",{className:"nav-item"},e("a",{className:"nav-link",href:item+".html"},item))
     );
     return e(
       'nav',
@@ -14,4 +13,4 @@ class NavBar extends React.Component {
        links)]);
   }
 }
-ReactDOM.render(e(NavBar), document.getElementById('navplace'));
+ReactDOM.render(e(NavBar), document.getElementById('nav-place'));
