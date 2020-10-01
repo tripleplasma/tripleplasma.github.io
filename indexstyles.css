@@ -1,3 +1,14 @@
 h1{
   text-align: center;
 }
+
+h4{
+  color:gray;
+}
+
+p{
+  display: inline;
+}
+.group-event{
+  margin-top: 50px;
+}
