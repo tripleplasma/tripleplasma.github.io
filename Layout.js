@@ -8,7 +8,7 @@ class NavBar extends React.Component {
     return e(
       'nav',
       {className:"navbar navbar-expand-sm bg-dark navbar-dark"},
-      [e('a',{className:"navbar-brand",href:"/index.html"},"The Happy Tree Friends"),
+      [e('a',{className:"navbar-brand",href:"/"},"The Happy Tree Friends"),
        e('ul',{className:"navbar-nav"},
        links)]);
   }
