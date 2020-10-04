@@ -1,5 +1,5 @@
 h1{
-  text-align: center;
+  text-align: left;
 }
 
 h4{
@@ -9,6 +9,35 @@ h4{
 p{
   display: inline;
 }
+
+.container{
+  margin-left: 160px;
+}
 .group-event{
-  margin-top: 50px;
+  margin-top: 25px;
+}
+.navbar-brand{
+  padding-left: 160px;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 20px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
 }
