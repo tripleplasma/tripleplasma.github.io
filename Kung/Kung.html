@@ -15,43 +15,72 @@
 <body>
   <div id="nav-place"></div>
   <div class="sidenav">
-  <a href="#intro">Intro</a>
-  <a href="#about-me">About</a>
-  <a href="#check-out-spotify">Spotify</a>
-  <a href="#check-out-discord">Discord</a>
-</div>
-  <div class="container">
-    <h1>Kung Lee</h1>
-    <div id="intro" class="section">
-    <h2>Hi, I'm Kung and I made this website!</h2>
-    <h4 style="color:grey;">I wanted a place for my friends and I to share our stories of high school and anything after that.</h4>
-    <img src="kungpics/jacket_beanie.jpg" alt="Kung" width="33%" height="33%">
-    <img src="kungpics/pose.jpg" alt="Kung" width="33%" height="33%">
-    <img src="kungpics/stare.jpg" alt="Kung" width="33%" height="33%">
+      <a href="#intro">Intro</a>
+      <a href="#about-me">About</a>
+      <a href="#check-out-spotify">Spotify</a>
+      <a href="#check-out-discord">Discord</a>
+  </div>
+
+  <div id="intro" style="padding-left:160px;">
+    <img src="kungpics/looking.jpg" id="blurred-image" width="100%" height="400px;" style="filter:blur(3px)">
+    <div class="bg-text">
+      <h1 style="text-align:center">Hi, I'm Kung Lee</h1>
+      <p>And I'm the creator</p>
     </div>
+  </div>
+
+  <div class="slideshow-container" style="padding-left:160px; margin-top:40px;">
+    <h1 style="text-align:center">Senior Photo Gallery</h1>
+    <div class="mySlides">
+      <img src="kungpics/jacket_beanie.jpg" class="slideshow-pics">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides" style="display:none">
+      <img src="kungpics/pose.jpg" class="slideshow-pics">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides" style="display:none">
+      <img src="kungpics/stare.jpg" class="slideshow-pics">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <div class="container">
     <div id="about-me" class="section">
-    <h2>About Me</h2>
-    <p>To be added in the future...</p>
+      <h2>About Me</h2>
+      <p>To be added in the future...</p>
     </div>
 
     <div id="check-out-spotify" class="section">
       <h2>Check Out My Spotify Playlist</h2>
-    <iframe src="https://open.spotify.com/embed/playlist/7rkN2ddCEhxZhGhkBHahCb"
-    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <iframe src="https://open.spotify.com/embed/playlist/6V57jWj9rDzUYuQPDrMWyP"
-    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    <iframe src="https://open.spotify.com/embed/playlist/0coDRE4UQguhwx1jQydMmc"
-    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/7rkN2ddCEhxZhGhkBHahCb"
+      frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/6V57jWj9rDzUYuQPDrMWyP"
+      frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="https://open.spotify.com/embed/playlist/0coDRE4UQguhwx1jQydMmc"
+      frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
 
     <div id="check-out-discord" class="section">
       <h2>Check Out My Discord and other friends discord</h2>
-    <iframe src="https://discordapp.com/widget?id=331566599259553812&theme=dark"allowtransparency="true"
-    frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    <iframe src="https://discordapp.com/widget?id=751623545343442976&theme=dark" width="350" height="500" allowtransparency="true"
-    frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe src="https://discordapp.com/widget?id=331566599259553812&theme=dark" allowtransparency="true"
+      frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe src="https://discordapp.com/widget?id=751623545343442976&theme=dark" allowtransparency="true"
+      frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </div>
   </div>
+  <script src="kungscripts.js"></script>
   <script src="/Layout.js"></script>
 </body>
 </html>
