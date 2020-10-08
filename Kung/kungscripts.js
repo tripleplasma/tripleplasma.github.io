@@ -1,3 +1,13 @@
+$(window).scroll(function(){
+  var scroll = $(window).scrollTop();
+  if(scroll >= 56){
+    $("#sidenav").css("top","0px");
+  } else {
+    var pix = 56 - scroll;
+    $("#sidenav").css("top",pix+"px");
+  }
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -11,8 +21,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var slides = $(".slide");
+  var dots = $(".dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

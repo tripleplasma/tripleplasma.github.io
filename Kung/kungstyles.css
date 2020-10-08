@@ -1,86 +1,78 @@
 h1 {
   text-align: left;
 }
-
-.container{
-  margin-left: 160px;
-}
-.navbar-brand{
-  padding-left: 160px;
-}
 iframe{
   width: 350px;
   height: 450px;
+  display: inline-block;
 }
 .section{
   margin-top: 50px;
 }
-.sidenav {
+#sidenav {
   height: 100%;
   width: 160px;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
+  top: 56px;
+  background-color: black;
   overflow-x: hidden;
 }
 
-.sidenav a {
+#sidenav a {
   padding: 20px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
 }
 
-.sidenav a:hover {
+#sidenav a:hover {
   color: #f1f1f1;
 }
 
-.bg-text {
+.intro-text {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 35%;
-  left: 55%;
+  position: relative;
+  top: -200px;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 80%;
   padding: 20px;
   text-align: center;
 }
+.slide img{
+  height: 33%;
+  width: 33%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 800px;
+}
 
-.slideshow-container {
-  max-width: 1000px;
-  padding-left:160px;
+.slideshow{
+  padding-top: 50px;
   position: relative;
   margin: auto;
 }
 
-.mySlides {
-
-}
-
-.slideshow-pics{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width:50%;
-}
-.text {
+.slide-caption{
   color: #f2f2f2;
-  font-size: 15px;
-  padding-right: 160px;
+  font-size: 30px;
+  padding: 8px 12px;
   position: absolute;
-  bottom:5%;
+  bottom: 5%;
   width: 100%;
   text-align: center;
+
 }
 
+/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -95,6 +87,20 @@ iframe{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+.prev{
+  left: 25%;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 25%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: black;
+  color: white;
+}
 
 .dot {
   cursor: pointer;
@@ -104,14 +110,7 @@ iframe{
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
 }

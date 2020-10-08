@@ -13,53 +13,59 @@
 
 <html>
 <body>
+
   <div id="nav-place"></div>
-  <div class="sidenav">
-      <a href="#intro">Intro</a>
-      <a href="#about-me">About</a>
-      <a href="#check-out-spotify">Spotify</a>
-      <a href="#check-out-discord">Discord</a>
+
+  <div id="sidenav">
+    <a href="#intro">Intro</a>
+    <a href="#about-me">About</a>
+    <a href="#check-out-spotify">Spotify</a>
+    <a href="#check-out-discord">Discord</a>
   </div>
 
-  <div id="intro" style="padding-left:160px;">
-    <img src="kungpics/looking.jpg" id="blurred-image" width="100%" height="400px;" style="filter:blur(3px)">
-    <div class="bg-text">
-      <h1 style="text-align:center">Hi, I'm Kung Lee</h1>
-      <p>And I'm the creator</p>
-    </div>
-  </div>
-
-  <div class="slideshow-container" style="padding-left:160px; margin-top:40px;">
-    <h1 style="text-align:center">Senior Photo Gallery</h1>
-    <div class="mySlides">
-      <img src="kungpics/jacket_beanie.jpg" class="slideshow-pics">
-      <div class="text">Caption Text</div>
+  <div id="main" style="padding-left:160px;">
+    <div id="intro" style="max-height:400px;">
+      <img src="kungpics/looking.jpg" id="blurred-image"  style="filter:blur(5px); width:100%; max-height:400px; ">
+      <div class="intro-text">
+        <h1 style="text-align:center">Hi, I'm Kung Lee</h1>
+        <p>And I'm the creator</p>
+      </div>
     </div>
 
-    <div class="mySlides" style="display:none">
-      <img src="kungpics/pose.jpg" class="slideshow-pics">
-      <div class="text">Caption Two</div>
+    <div id="slide-show1" class="slideshow">
+        <h1 style="text-align:center">Kung's Senior Pictures</h1>
+        <div class="slide">
+          <img src="kungpics/jacket_beanie.jpg">
+          <div class="slide-caption">Kung in a Jacket</div>
+        </div>
+        <div class="slide" style="display:none;">
+          <img src="kungpics/pose.jpg">
+          <div class="slide-caption">Cool Pose</div>
+        </div>
+        <div class="slide" style="display:none;">
+          <img src="kungpics/stare.jpg">
+          <div class="slide-caption">Kung with red glasses</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
 
-    <div class="mySlides" style="display:none">
-      <img src="kungpics/stare.jpg" class="slideshow-pics">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  <div style="margin-left:160px; padding-left:42.5%;">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-  <div class="container">
     <div id="about-me" class="section">
-      <h2>About Me</h2>
-      <p>To be added in the future...</p>
+      <h2>Heres some stuff about me!</h2>
+      <p>After World War I during the 1920s,  there was an economic expansion. However, due to low consumer wages, and agricultural growth,
+        there was less factory production which led to a recession and eventually, the stock market crash. This resulted in many people’s
+        money to be loss because banks were investing them into the stock market. Putting the United States in the worst depression it
+        has ever had. However, the stock market crash was a wakeup call to improve the current society as a way to prevent another catastrophe.
+        Thus, Theodore Roosevelt’s implementation of The New Deal which significantly made a turning point in American History by creating a more
+        socialist society by providing regulations, social justice, and new foreign policies.</p>
+      <p>The New Deal created a significant turning point in American History in turning by providing more social justice. In Document 6, Charles Evans Hughes, expresses his complaints about  the government’s authority into wages and work hours as a power that should not let into interstate commerce. His complaints confirm that the government is trying to bring social justice towards its workers and employers by improving their wages and work hours at the cost of letting the government control more of the economy. Resulting in a significant change in American History as the United States becomes more socialist by letting the government control the economy. In Document 3, a letter to Senator Robert Wagner shares their concerns about the future of United States economy and government as more people become more accustomed to the idea that the government is interfering with the economy to provide more jobs and better wages with less work hours while failing to realize that if the trend continues, there will be no more social classes as the government shifts into a more socialist and communist government. This proves how The New Deal created a significant change in American History as a turning point into a more socialist place. Additionally, The Square Deal was one of Roosevelt’s actions to limit the creation of monopolies. This deal was an add on to the previously implemented Anti-Trust laws that tried to stop monopolies in the past, however, with The Square Deal, there would be trust busters to enforce the anti-trust laws. Showing how the president wanted to take some control over the economy in order to stop overpowering corporations, at the cost of taking away the laissez faire from the economy. Proving how even the president intended to create a more socialist government for the United States with the implementation of The New Deal, resulting in a significant change in American History.</p>
     </div>
 
     <div id="check-out-spotify" class="section">

@@ -14,58 +14,39 @@
 <html>
 <body>
   <div id="nav-place"></div>
-  <div class="sidenav">
-  <a href="#doorcounty">Door County</a>
-  <a href="#beaubirthday">Beau Birthday</a>
-  <a href="#aptest">AP Test</a>
-  <a href="#area51raid">Area 51 Raid</a>
+  <div id="sidenav">
+  <a href="#slide-show1">Adventures!</a>
   </div>
-  <div class="container">
-  <h1>Welcome To The Happier Tree Friends Website!!!</h1>
-  <h2>Look at the cool things we've done!</h2>
-  <div class="col-16">
 
-  <div id="group-events">
-    <div class="group-event" id="doorcounty">
-      <h4> Door County - August 1st 2020</h4>
-      <img src="indexpics/doorcounty8012020.jpg" width="50%" height="50%">
-    </div>
-    <div class="group-event" id="beaubirthday">
-      <h4> Beau's Birthday Party - May 19th 2020</h4>
-      <img src="indexpics/beaubirthday5192020.jpg" width="50%" height="50%">
-    </div>
-    <div class="group-event" id="aptest">
-      <h4> Virtual AP Test - May 15th 2020</h4>
-      <img src="indexpics/aptest5152020.jpg" width="25%" height="25%">
-    </div>
-    <div class="group-event" id="area51raid">
-      <h4> Area 51 Raid - April 8th 2020</h4>
-      <img src="indexpics/area51raid4082020.jpg" width="50%" height="50%">
-    </div>
-    <div class="group-event">
-      <h4> Rona - March 16th 2020</h4>
-      <img src="indexpics/rona3162020.jpg" width="50%" height="50%">
-    </div>
-    <div class="group-event">
-      <h4> Skaters Edge - February 5th 2020</h4>
-      <img src="indexpics/skatersedge2052020.jpg" width="50%" height="50%">
-    </div>
-    <div class="group-event">
-      <h4> Quad Birthday - January 4th 2020</h4>
-      <img src="indexpics/quadbirthday1042020.jpg" width="50%" height="50%">
-    </div>
-    <div class="group-event">
-      <h4>Olive Garden - December 4th 2019</h4>
-      <img src="indexpics/olivegarden12042019.jpg" width="50%" height="50%">
-    </div>
-    <div class="group-event">
-      <h4>Homecoming - September 29th 2019</h4>
-      <img src="indexpics/hoco9292019.jpeg" width="50%" height="50%">
-    </div>
+  <div class="main" style="padding-left:160px;">
+  <h1 style="text-align:center">Welcome To The Happier Tree Friends Website!!!</h1>
+  <div id="slide-show1" class="slideshow">
+      <h1 style="text-align:center">Look at the cool things we've done!</h1>
+      <div class="slide">
+        <img src="indexpics/doorcounty8012020.jpg">
+        <div class="slide-caption">Door County - August 1st 2020</div>
+      </div>
+      <div class="slide" style="display:none;">
+        <img src="indexpics/beaubirthday5192020.jpg">
+        <div class="slide-caption">Beau's Birthday Party - May 19th 2020</div>
+      </div>
+      <div class="slide" style="display:none;">
+        <img src="indexpics/area51raid4082020.jpg">
+        <div class="slide-caption">Area 51 Raid - April 8th 2020</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
   </div>
 
   </div>
-</div>
+
   <script src="Layout.js"></script>
   <script src="indexscripts.js"></script>
 </body>
