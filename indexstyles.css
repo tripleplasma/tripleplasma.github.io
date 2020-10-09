@@ -69,7 +69,7 @@
   max-width: 350px;
 }
 
-.intros-caption:link{
+.intros-caption{
   position: absolute;
   left:50%;
   bottom: -400%;
