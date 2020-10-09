@@ -13,5 +13,5 @@ function slideShow(){
   if(slideIndex >= slides.length){
     slideIndex = 0;
   }
-  setTimeout(slideShow,5000);
+  setTimeout(slideShow,4000);
 }
