@@ -1,32 +1,11 @@
-#sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 56px;
-  background-color: black;
-  overflow-x: hidden;
-}
-
-#sidenav a {
-  padding: 20px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-}
-
-#sidenav a:hover {
-  color: #f1f1f1;
-}
-
 .slide img{
-  height: 50%;
-  width: 50%;
+  width: 75%;
+  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-height: 800px;
+  border: 10px solid black;
 }
 
 .slideshow{
@@ -41,40 +20,29 @@
   padding: 8px 12px;
   position: absolute;
   bottom: 5%;
-  width: 100%;
-  text-align: center;
-
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.prev{
-  left: 25%;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 25%;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+  left:35%;
+  width: 30%;
   background-color: black;
-  color: white;
+  text-align: center;
 }
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6}
+  to {opacity: 1}
+}
+
 
 .dot {
   cursor: pointer;
@@ -87,4 +55,11 @@
 }
 .active, .dot:hover {
   background-color: #717171;
+}
+
+.intros h2{
+color: blue;
+}
+
+.intros img{
 }

@@ -1,36 +1,17 @@
-$(window).scroll(function(){
-  var scroll = $(window).scrollTop();
-  if(scroll > 56){
-    $("#sidenav").css("top","0px");
-  } else {
-    var pix = 56 - scroll;
-    $("#sidenav").css("top",pix+"px");
-  }
+$(document).ready(function(){
+  slideShow();
 });
 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
+var slideIndex = 0;
+function slideShow(){
   var slides = $(".slide");
-  var dots = $(".dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  for (var i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+  slides[slideIndex].style.display = "block";
+  slideIndex++;
+  if(slideIndex >= slides.length){
+    slideIndex = 0;
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  setTimeout(slideShow,5000);
 }
