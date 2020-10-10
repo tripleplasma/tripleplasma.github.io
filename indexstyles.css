@@ -9,7 +9,6 @@
 }
 
 .slideshow{
-  padding-top: 50px;
   position: relative;
   margin: auto;
 }
@@ -65,8 +64,8 @@
 
 .intros img{
   width: 30%;
-  max-height: 350px;
-  max-width: 350px;
+  max-height: 325px;
+  max-width: 325px;
 }
 
 .intros-caption{

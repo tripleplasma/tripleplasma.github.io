@@ -55,6 +55,7 @@ iframe{
   margin-right: auto;
   max-height: 800px;
   border: 10px solid black;
+  border-radius: 25px;
 }
 
 .slideshow{
