@@ -41,4 +41,20 @@ class SlideShow extends React.Component{
     return divs;
   }
 }
+
+class Introductions extends React.Component{
+  render(){
+    const birthdayOrder = ["Cade","Kayla","Grace","Evanna","Megan","Evan","Abby","Natalie","Kung","Tanner","Beau","Ethan","Bianca"];
+    const divs = [e("h1",null,"Meet the crew")];
+    for(var i = 0; i < birthdayOrder.length; i++){
+      divs.push(
+        e("div",{className:"intros"},
+        [e("img",{src:birthdayOrder[i]+"/"+birthdayOrder[i].toLowerCase()+"pics/"+birthdayOrder[i]+".jpg"},null),
+         e("a",{className:"intros-caption",href:birthdayOrder[i]+"/"+birthdayOrder[i]+".html"},birthdayOrder[i])]
+       ));
+    }
+    return divs;
+  }
+}
 ReactDOM.render(e(SlideShow), document.getElementById("slide-show1"));
+ReactDOM.render(e(Introductions), document.getElementById("intro"))
