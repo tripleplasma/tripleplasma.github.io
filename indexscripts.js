@@ -32,6 +32,7 @@ class SlideShow extends React.Component{
     const pics = [new Picture("indexpics/Door_County_August_1st_2020.jpg"),new Picture("indexpics/Beau's_Birthday_May_19th_2020.jpg")
     ,new Picture("indexpics/Area_51_Raid_April_8th_2020.jpg"),new Picture("indexpics/Rona_March_16th_2020.jpg")
     ,new Picture("indexpics/Skaters_Edge_February_5th_2020.jpg"),new Picture("indexpics/Quad_Birthday_January_4th_2020.jpg")
+    ,new Picture("indexpics/Olive_Garden_December_4th_2019.jpg"),new Picture("indexpics/Hoco_September_29th_2019.jpeg")];
     const divs = pics.map(picUrl =>
       e("div",{className:"slide fade"},
       [e("img",{src:picUrl.url},null),
