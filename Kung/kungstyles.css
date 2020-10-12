@@ -49,6 +49,9 @@ iframe{
 .slide{
   display: none;
 }
+.slide-appear{
+  display: block;
+}
 .slide img{
   display: block;
   margin-left: auto;
@@ -100,7 +103,6 @@ iframe{
   right: 10%;
   border-radius: 0 5px 5px 0;
 }
-
 .dot {
   cursor: pointer;
   height: 15px;
