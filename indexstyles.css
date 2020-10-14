@@ -57,23 +57,33 @@
 }
 
 .intros{
-  padding-bottom: 10px;
   position: relative;
-  display: inline;
+  display: inline-block;
 }
 
-.intros img{
+.intro-pic{
+  transition: 1s ease;
   width: 30%;
-  max-height: 325px;
-  max-width: 325px;
+  height: 300px;
+  width: 300px;
 }
 
 .intros-caption{
+  opacity: 0;
+  transition: 1s ease;
   position: absolute;
-  left:50%;
-  bottom: -400%;
   font-size: 25px;
   color: white;
   background-color: black;
   padding: 5px 5px 5px 5px;
+  left:40%;
+  top:40%;
+}
+
+.intros:hover .intro-pic{
+  opacity: 0.3;
+}
+
+.intros:hover .intros-caption{
+  opacity: 1;
 }

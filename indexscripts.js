@@ -49,7 +49,7 @@ class Introductions extends React.Component{
     for(var i = 0; i < birthdayOrder.length; i++){
       divs.push(
         e("div",{className:"intros"},
-        [e("img",{src:birthdayOrder[i]+"/"+birthdayOrder[i].toLowerCase()+"pics/"+birthdayOrder[i]+".jpg"},null),
+        [e("img",{className:"intro-pic",src:birthdayOrder[i]+"/"+birthdayOrder[i].toLowerCase()+"pics/"+birthdayOrder[i]+".jpg"},null),
          e("a",{className:"intros-caption",href:birthdayOrder[i]+"/"+birthdayOrder[i]+".html"},birthdayOrder[i])]
        ));
     }
