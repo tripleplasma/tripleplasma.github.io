@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
@@ -14,19 +14,28 @@
 <html>
 <body>
   <div id="nav-place"></div>
-  <h1 style="text-align:center;">Abby Vela</h1>
-  <img src="abbypics/Abby.jpg" width="25%" height="25%" style="display:block; margin-left:auto; margin-right:auto;">
+
   <div class="main">
-    <div class="sabotage">
-      <h2>My Sabotage</h2>
-      <img src="abbypics/umm.PNG">
+
+    <div id="intro" style="max-height:400px;">
+      <img src="abbypics/Abby.jpg" id="blurred-image"  style="filter:blur(5px); width:100%; max-height:400px; ">
+      <div class="intro-text">
+        <h1 style="text-align:center">Hi, I'm Abby Vela</h1>
+        <p>And that on peroid.</p>
+      </div>
     </div>
+
+    <div id="slide-show1" class="slideshow">
+    </div>
+
     <div class="music" style="margin-top:50px;">
       <h2>My Music</h2>
       <iframe src="https://open.spotify.com/embed/playlist/2vwXgDGc4mIg3RhbG2GmNN" width="300" height="380"
       frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
+
   </div>
   <script src="/Layout.js"></script>
+  <script src="abbyscripts.js"></script>
 </body>
 </html>

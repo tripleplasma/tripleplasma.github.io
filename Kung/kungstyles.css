@@ -46,6 +46,15 @@ iframe{
   padding: 20px;
   text-align: center;
 }
+
+.media{
+  position: relative;
+  bottom:200px;
+  z-index: 2;
+}
+.socialmedia{
+  display: inline-block;
+}
 .slide{
   display: none;
 }
