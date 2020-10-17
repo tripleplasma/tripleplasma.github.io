@@ -41,21 +41,19 @@ function showSlides(n) {
   dots[currentSlide].className += " active";
 }
 
-class AbbyShow extends React.Component{
+class BeauShow extends React.Component{
   render(){
     class Picture{
       constructor(picName,caption){
-        this.url = "abbypics/"+picName+".jpg";
+        this.url = "beaupics/"+picName+".jpg";
         this.caption = caption;
       }
     }
     const pics = [
-      new Picture("Abby","Me"),
-      new Picture("summerabby","Summer"),
-      new Picture("doorcountyabby","Get out of the background"),
-      new Picture("cottagecoreabby","Cottage Core Season"),
-      new Picture("shadowabby","My shadow be missing"),
-      new Picture("umm","This is Bianca")
+      new Picture("Beau","Me"),
+      new Picture("commabeau","Commas"),
+      new Picture("dirtyshoesbeau","Dirty Shoes"),
+      new Picture("snowbeau","Snow")
     ];
 
     var slides = pics.map(pic =>
@@ -75,4 +73,4 @@ class AbbyShow extends React.Component{
     return slides;
   }
 }
-ReactDOM.render(e(AbbyShow),document.getElementById("slide-show1"));
+ReactDOM.render(e(BeauShow),document.getElementById("slide-show1"));

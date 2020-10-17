@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
@@ -15,14 +15,19 @@
 <body>
   <div id="nav-place"></div>
   <div id="main">
-    <h1 style="text-align:center;">Beau Gaulin</h1>
-    <img src="beaupics/Beau.jpg" width="25%" height="25%" style="display:block; margin-left:auto; margin-right:auto;">
-      <div class="sabotage">
-          <h1>My Sabotage</h1>
-          <img src="beaupics/tanner1.jpg">
+    <div id="intro" style="max-height:400px;">
+      <img src="beaupics/Beau.jpg" id="blurred-image"  style="filter:blur(5px); width:100%; max-height:400px; ">
+      <div class="intro-text">
+        <h1 style="text-align:center">Hi, I'm Beau Gaulin</h1>
+        <p>And I like cute things</p>
       </div>
+    </div>
+
+    <div id="slide-show1" class="slideshow">
+    </div>
   </div>
 
   <script src="/Layout.js"></script>
+  <script src="beauscripts.js"></script>
 </body>
 </html>
