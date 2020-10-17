@@ -1,3 +1,19 @@
+.welcome{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 800px)
+{
+  .welcome{
+    font-size: 40px;
+  }
+  .welcome img{
+    width: 5%;
+  }
+}
+
 .slide img{
   width: 75%;
   height: auto;
@@ -64,10 +80,18 @@
 .intro-pic{
   transition: 1s ease;
   width: 30%;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 }
-
+@media only screen and (max-device-width: 800px)
+{
+  .intro-pic{
+    transition: 1s ease;
+    width: 30%;
+    height: 300px;
+    width: 300px;
+  }
+}
 .intros-caption{
   opacity: 0;
   transition: 1s ease;
